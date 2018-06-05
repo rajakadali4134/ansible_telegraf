@@ -1,0 +1,7 @@
+[stg_slave]
+MM_Slave  	ansible_host=10.99.20.17         ansible_user=ansible_user
+CS1_Slave  	ansible_host=10.99.20.147        ansible_user=ansible_user
+CS2_Slave  	ansible_host=10.99.20.112        ansible_user=ansible_user
+ODB_Slave  	ansible_host=10.99.20.215        ansible_user=ansible_user
+
+

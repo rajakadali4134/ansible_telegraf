@@ -1,0 +1,9 @@
+---
+# tasks file for telegraf
+#
+- name: Adding the influxdb repository
+  include: influxdb_repo.yml
+
+- name: Installing telegraf
+  include: install_telegraf.yml
+

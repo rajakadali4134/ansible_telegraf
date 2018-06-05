@@ -1,0 +1,11 @@
+---
+
+- name: adding the repo file
+  copy:
+    src: files/influxdb.repo
+    dest: /etc/yum.repos.d/influxdb.repo
+    owner: root
+    group: root
+    mode: 0644
+  become: yes
+  become_method: sudo

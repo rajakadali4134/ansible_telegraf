@@ -1,0 +1,9 @@
+---
+# handlers file for telegraf
+#
+- name: Restart telegraf
+  service:
+    name: telegraf
+    state: restarted
+  become: yes
+  become_method: sudo

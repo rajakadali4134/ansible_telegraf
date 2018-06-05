@@ -1,0 +1,5 @@
+---
+- hosts: stg_slave
+  remote_user: ansible_user
+  roles:
+    - ../telegraf

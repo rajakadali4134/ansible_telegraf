@@ -1,0 +1,28 @@
+---
+
+- name: Install telegraf
+  yum:
+    name: telegraf
+    state: present
+  become: yes
+  become_method: sudo
+
+- name: setup Configuration
+  template:
+    src: templates/telegraf.conf.j2
+    dest: /etc/telegraf/telegraf.conf
+    owner: root
+    group: root
+    mode: 0644
+  become: yes
+  become_method: sudo
+  notify:
+   - Restart telegraf
+
+- name: start telegraf agent
+  service:
+    name: telegraf
+    state: started
+  become: yes
+  become_method: sudo
+

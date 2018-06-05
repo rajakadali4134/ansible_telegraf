@@ -1,0 +1,7 @@
+---
+# vars file for telegraf
+#
+influxdb_url: "http://10.99.10.120:8086"
+influxdb_database: "scalable_metrics"
+influxdb_retention: "threemonth"
+
