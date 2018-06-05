@@ -21,8 +21,8 @@ Including an example of how to use your role (for instance, with variables passe
 
     - hosts: servers
       remote_user: ansible_user
-  roles:
-    - ../telegraf
+      roles:
+        - ../telegraf
 
 
 You can run using the following command.
